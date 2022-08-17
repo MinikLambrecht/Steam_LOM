@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/no-explicit-any */
 import { MemoryRouter as Router, Routes, Route } from 'react-router-dom';
 
 import './App.css';
@@ -33,7 +32,6 @@ const Hello = () => {
         className="btn bg-purple-500"
         type="button"
         onClick={() => {
-          // eslint-disable-next-line no-console
           console.log(window.electron.store.get('test'));
         }}
       >
